@@ -130,8 +130,11 @@ Then `vagrant up`
 7|rwx
 
 **For example:**
+
 **chmod 777 foldername** will give read, write, and execute permissions for everyone
+
 **chmod 700 foldername** will give read, write and execute permissions for the user only
+
 **chmod 327 foldername** will give write and execute (3) permission for the user, w(2) for the group, and read, write, and execute for the users.
 
 ## Launching node app
