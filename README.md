@@ -88,12 +88,6 @@ vagrant@ubuntu-xenial:~$ chmod +x nginx_installation_script.sh
 vagrant@ubuntu-xenial:~$ ./nginx_installation_script.sh
 ```
 
-# Provisioning with bash scripts 
-```bash
-config.vm.provision "shell", path: "environment/provision.sh"
-```
-First `vagrant destroy`
-Then `vagrant up`
 
 `top` shows all programs running on the system
 `ps` commands gives ProgramID
@@ -135,6 +129,15 @@ Then `vagrant up`
 - **chmod 700 foldername** will give read, write and execute permissions for the user only
 - **chmod 327 foldername** will give write and execute (3) permission for the user, w(2) for the group, and read, write, and execute for the users.
 
+# Provisioning with bash scripts 
+```bash
+config.vm.provision "shell", path: "environment/provision.sh"
+```
+First `vagrant destroy`
+Then `vagrant up`
+
+`config.vm.provision` - Configures provisioners (refers to process of setting up IT infrastructure) on the machine, so that software can be automatically installed and configured when the machine is created.
+`config.vm.synced_folder` - Configures synced folders on the machine, so that folders on your host machine can be synced to and from the guest machine. 
 ## Launching node app
 ## Running tests 
 
