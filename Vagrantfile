@@ -12,6 +12,11 @@ Vagrant.configure("2") do |config|
 
   # sync folder from your OS to VM
   # checking the folder is in home page within the VM
-  config.vm.synced_folder "app", "/home/vagrant/app"  
+  # below automates downloading all dependencies
+  config.vm.synced_folder ".", "/home/vagrant/app"  
   #config.vm.sync_folder "app", "/app"
+
+  # run shell script command from environment folder - creating a file called provision.sh
+  # add one line in the vagrant file to link the provision.sh at the same time while vm is being created
+  config.vm.provision "shell", path: "environment/provision.sh"
 end
