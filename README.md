@@ -1,5 +1,6 @@
 # Syncing Folders from OS to VM 
  `config.vm.synced_folder "app", "/app"`
+
 The above command will sync OS app to VM
 
 
