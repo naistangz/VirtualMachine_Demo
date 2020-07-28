@@ -67,3 +67,21 @@ root@ubuntu-xenial:~# npm install pm2 -g
 
 
 ![passed_rake](passed_rake.jpeg)
+
+## Chmode `+x`
+`chmod +x` on a file (script) makes the file executable file.
+`chmod` is short for change mode 
+Files and directories in Unix may have three types of permissions:
+1. read `r`
+2. Write `w`
+3. Execute `x`
+
+```bash
+vagrant@ubuntu-xenial:~$ ls
+app
+vagrant@ubuntu-xenial:~$ touch nginx_installation_script.sh
+vagrant@ubuntu-xenial:~$ ls
+app  nginx_installation_script.sh
+vagrant@ubuntu-xenial:~$ chmod +x nginx_installation_script.sh
+vagrant@ubuntu-xenial:~$ ./nginx_installation_script.sh
+```
