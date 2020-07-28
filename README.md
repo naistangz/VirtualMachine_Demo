@@ -63,6 +63,19 @@ Anaiss-MacBook-Pro:spec-tests anaistang$ gem install bundler
 root@ubuntu-xenial:~# curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 root@ubuntu-xenial:~# npm install pm2 -g
 ```
+## Automating Installations in `provision.sh`
+
+```bash
+#!/bin/bash
+
+sudo apt-get update -y
+sudo apt-get install nginx -y
+sudo apt-get upgrade -y
+sudo apt-get install python-software-properties
+sudo npm install npm -g
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo npm install pm2 -g
+```
 
 ## Running tests with Rake
 - Rake is a build tool for Ruby
@@ -143,6 +156,10 @@ Then `vagrant up`
 
 # Launching Node App
 `node app.js`
+
+**Run in browser:**
+
+http://development.local:3000/
 
 # Running tests 
 

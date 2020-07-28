@@ -700,3 +700,28 @@ Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
 [[0;32m  OK  [0m] Started Session 1 of user vagrant.
 [[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
 [[0;32m  OK  [0m] Started User Manager for UID 1000.
+
+Ubuntu 16.04.6 LTS ubuntu-xenial ttyS0
+
+ubuntu-xenial login: [   43.781590] cloud-init[1354]: Generating locales (this might take a while)...
+[   47.901407] cloud-init[1354]:   en_US.UTF-8... done
+[   47.902606] cloud-init[1354]: Generation complete.
+[   51.388485] cloud-init[1354]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~16.04.1 running 'modules:config' at Tue, 28 Jul 2020 15:08:37 +0000. Up 42.68 seconds.
+ci-info: no authorized SSH keys fingerprints found for user ubuntu.
+<14>Jul 28 15:08:50 ec2: 
+<14>Jul 28 15:08:50 ec2: #############################################################
+<14>Jul 28 15:08:50 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
+<14>Jul 28 15:08:50 ec2: 1024 SHA256:Mqs/fo3IsDQviH2Xg9QMyYacx0gTge0eLZbH6AzfDGE root@ubuntu-xenial (DSA)
+<14>Jul 28 15:08:50 ec2: 256 SHA256:I9ZUZqspHoOmb39zsb5q6lXaKkU9zny15HPVoC/DcVI root@ubuntu-xenial (ECDSA)
+<14>Jul 28 15:08:50 ec2: 256 SHA256:amV19cobHAeE4pLHA+boMdFyJcWgnACCu+Zu6Il9WbE root@ubuntu-xenial (ED25519)
+<14>Jul 28 15:08:50 ec2: 2048 SHA256:+hwpyUdT7k+HaCnZqiXlF6TpOqAcq9Z8Qn+rWy654zg root@ubuntu-xenial (RSA)
+<14>Jul 28 15:08:50 ec2: -----END SSH HOST KEY FINGERPRINTS-----
+<14>Jul 28 15:08:50 ec2: #############################################################
+-----BEGIN SSH HOST KEY KEYS-----
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHsHzstl/Evgv+9QE9H3g2GxfCA6ZwIO6onmyPlLIvE4JFzbTDM3ffiQZzDqpUyDPTK53eYa4AGyu0CtKNHF4Yk= root@ubuntu-xenial
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDrpaiwSI5GkuWk0ShORaFDvgIGP+Tx/DVX+EIRQ/67F root@ubuntu-xenial
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3teg55KRjOYG1uagiUA6TTEa5XnjtCnT94QfdBM1H9pVKZmfDMkh87DNh5esLQnYHhc/SU3L6wNHaG9RkhpIu+6Dau4ZeixrNzwL4qkc+9n/tMzxdXc7NZjJAsGNI03HQWn6o/ocAJHzHa55w6NtwSwj+eg2HyDC6nsgiSBeCKNN9IPlV+PBkqbkRX5BlvAcK285iey775i81NdS0ZYUfceoInHv4cH3YYhVMYkRJEcFtqrPEVxeerD+WOFhGerg7mgufawTnL3r0EHTImCKGxPP9qEFkQAtY5mVzVk13WPOEd+urj00/9yBXH/WLfeuBMpj/CFT7jhYN8kFfEj+j root@ubuntu-xenial
+-----END SSH HOST KEY KEYS-----
+[   55.577088] cloud-init[1627]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~16.04.1 running 'modules:final' at Tue, 28 Jul 2020 15:08:49 +0000. Up 54.24 seconds.
+[   55.578011] cloud-init[1627]: ci-info: no authorized SSH keys fingerprints found for user ubuntu.
+[   55.578588] cloud-init[1627]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~16.04.1 finished at Tue, 28 Jul 2020 15:08:50 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 55.49 seconds
