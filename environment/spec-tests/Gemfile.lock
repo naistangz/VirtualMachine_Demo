@@ -37,6 +37,7 @@ GEM
       sfl
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
