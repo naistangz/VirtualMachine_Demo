@@ -65,3 +65,5 @@ root@ubuntu-xenial:~# npm install pm2 -g
 - Rake is a build tool for Ruby
 - Rake task runs a set of specs 
 
+
+![passed_rake](passedrake.jpeg)
