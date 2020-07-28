@@ -92,6 +92,8 @@ vagrant@ubuntu-xenial:~$ ./nginx_installation_script.sh
 ```bash
 config.vm.provision "shell", path: "environment/provision.sh"
 ```
+First `vagrant destroy`
+Then `vagrant up`
 
 `top` shows all programs running on the system
 `ps` commands gives ProgramID
