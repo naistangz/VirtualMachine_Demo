@@ -7,7 +7,7 @@ The above command will sync OS app to VM
 ## App folder synced with VM 
 
 ## Communication with Devs
-- What languague is used to build the app
+- What language is used to build the app
 - What framework has been used 
 - Are there any dependencies (imported modules) to be installed together 
 - What will the app look like 
@@ -70,7 +70,9 @@ root@ubuntu-xenial:~# npm install pm2 -g
 
 ## Chmode `+x`
 `chmod +x` on a file (script) makes the file executable file.
-`chmod` is short for change mode 
+`chmod` change mode - modify file access rights 
+`chown` change owner - change file ownership
+`chgrp` change group owner - change a file's group ownership
 Files and directories in Unix may have three types of permissions:
 1. read `r`
 2. Write `w`
@@ -85,3 +87,53 @@ app  nginx_installation_script.sh
 vagrant@ubuntu-xenial:~$ chmod +x nginx_installation_script.sh
 vagrant@ubuntu-xenial:~$ ./nginx_installation_script.sh
 ```
+
+# Provisioning with bash scripts 
+```bash
+config.vm.provision "shell", path: "environment/provision.sh"
+```
+
+`top` shows all programs running on the system
+`ps` commands gives ProgramID
+`chmod +x` file_name.sh
+`cat filename` (concatenate) command to display the file content on terminal
+ To change directory permissions in Linux, use the following:
+- **chmod +rwx filename** to add permissions
+- **chmod -rwx directoryname** to remove permissions
+- **chmod +x filename** to allow executable permissions
+- **chmon -wx filename** to take out write and executable permissions (confidential information)
+
+**Changing directory permissions on Linux for the Group Owners**
+- **chmod g+w filename**
+- **chmod g-wx filename**
+- **chmod o+w filename**
+- **chmod o-rwx foldername**
+
+**Changing permissions in numeric code in linux**
+0 | No Permission
+---|-----
+1| Execute
+2| Write
+4| Read
+
+**Therefore:**
+0|---
+---|---
+1|--x
+2|-w-
+3|-wx
+4|r-
+5|r-x
+6|rw-
+7|rwx
+
+**For example:**
+**chmod 777 foldername** will give read, write, and execute permissions for everyone
+**chmod 700 foldername** will give read, write and execute permissions for the user only
+**chmod 327 foldername** will give write and execute (3) permission for the user, w(2) for the group, and read, write, and execute for the users.
+
+## Launching node app
+## Running tests 
+
+
+
