@@ -66,4 +66,4 @@ root@ubuntu-xenial:~# npm install pm2 -g
 - Rake task runs a set of specs 
 
 
-![passed_rake](passedrake.jpeg)
+![passed_rake](passed_rake.jpeg)
