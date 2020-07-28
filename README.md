@@ -138,8 +138,8 @@ Then `vagrant up`
 
 `config.vm.provision` - Configures provisioners (refers to process of setting up IT infrastructure) on the machine, so that software can be automatically installed and configured when the machine is created.
 `config.vm.synced_folder` - Configures synced folders on the machine, so that folders on your host machine can be synced to and from the guest machine. 
-## Launching node app
-## Running tests 
+# Launching Node App
+# Running tests 
 
 
 
