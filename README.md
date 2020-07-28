@@ -31,15 +31,18 @@ The above command will sync OS app to VM
 `sudo service nginx reload`
 **sudo systemctl status nginx.service**
 
-**Installation**
+## Installation
 First run as admin 
 `$ vagrant@vagrant-ubuntu-trusty-64: ~$sudo -i`
+
 `$ vagrant plugin install vagrant-hostsupdater`
 
 Uninstall with:
+
 `$ vagrant plugin uninstall vagrant-hostsupdater`
 
 Update the plugin with:
+
 `$ vagrant plugin update vagrant-hostsupdater`
 
 ## Usage 
@@ -87,7 +90,6 @@ app  nginx_installation_script.sh
 vagrant@ubuntu-xenial:~$ chmod +x nginx_installation_script.sh
 vagrant@ubuntu-xenial:~$ ./nginx_installation_script.sh
 ```
-
 
 `top` shows all programs running on the system
 `ps` commands gives ProgramID
