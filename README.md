@@ -51,6 +51,8 @@ config.vm.network :private_network, ip: '192.168.3.10'
 config.vm.hostname = 'www.test.com'
 config.hostsupdater.aliases = ["aliases.test"]
 ```
+ssh:
+`sudo killall -HUP mDNSResponder`
 
 ## Installing dependencies `ruby`
 ```bash
